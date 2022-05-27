@@ -18,13 +18,13 @@ def count_words():
     words = text.split(" ")
     dicWords = {}
     for word in words:
-        if word in dicWords:
+        if word in dicWords.keys():
             dicWords[word] += 1
-            print(dicWords)
         elif word == "":
             pass
         else:
             dicWords[word] = 1
+    print(dicWords)
     return dicWords
 
 count_words()
